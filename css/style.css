@@ -58,6 +58,8 @@ main {
 }
 .campo {
     margin-bottom: 1rem;
+    color: #e347a7;
+    
 }
 
 label {
@@ -103,6 +105,10 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    background-image: url(/PAGINA-INSERIR/imgs/imagemrodapé.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
 }
 
 
@@ -135,6 +141,8 @@ footer {
     border: none;
     position: absolute;
     right: 150px;
+   
+    
 
 }
 
@@ -156,6 +164,7 @@ nav a:first-child {
 .img-search {
     width: 25px; 
     object-fit: contain;
+    
   
    
 }
@@ -167,9 +176,6 @@ nav a:first-child {
     padding: 0; 
     position: relative;
 }
-
-
-
 
 
 
