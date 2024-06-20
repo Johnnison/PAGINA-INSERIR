@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -14,16 +15,19 @@
         <form action="" id="form-buscar">
             <input type="search" name="buscar" id="buscar" placeholder="buscar...">
             <button type="submit" id="btn-buscar" class="btn-transparent">
-                <img src="imgs/search_24dp.png" alt="buscar" class="img-search" alt=""></button>
+                <img src="imgs/search_24dp.png" alt="buscar" class="img-search">
+            </button>
         </form>
 
         <a href="" class="icon-link">
-            <img src="imgs/person_24dp.png" alt="" width="40px">
-            Cadastre-se</a>
+            <img src="imgs/person_24dp.png" alt="Cadastre-se" width="40px">
+            Cadastre-se
+        </a>
 
         <a href="" class="icon-link">
-            <img src="imgs/help_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="" width="40px">
-            Duvidas.</a>
+            <img src="imgs/help_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Dúvidas" width="40px">
+            Dúvidas
+        </a>
     </header>
 
     <nav>
@@ -31,11 +35,8 @@
         <a href="">Sobre a loja</a>
     </nav>
 
-
-
-
     <main>
-        <section id="formulario.html">
+        <section>
             <h1>Inserir Produto</h1>
             <form action="processar_produto.php" method="post" enctype="multipart/form-data">
                 <div class="campo">
@@ -44,11 +45,11 @@
                 </div>
 
                 <div class="campo">
-                    <label for="descrição">Descrição:</label>
-                    <textarea name="descrição" id="descrição" rows="4" required></textarea>
+                    <label for="descricao">Descrição:</label>
+                    <textarea name="descricao" id="descricao" rows="4" required></textarea>
                 </div>
 
-                <div class="campo" > 
+                <div class="campo">
                     <label for="imagem">Imagem do Produto:</label>
                     <input type="file" id="imagem" name="imagem" accept="image/*" required>
                 </div>
@@ -56,23 +57,13 @@
                 <div class="campo">
                     <button type="submit">Inserir Produto</button>
                 </div>
-
-                <footer>
-                
-
-                    <!--Rodapé do Site-->
-                  
-                </footer>
-
-
             </form>
-
         </section>
-
-
-
-        
-
     </main>
 
+    <footer>
+        <!--Rodapé do Site-->
+    </footer>
+</body>
 
+</html>
