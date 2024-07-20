@@ -5,74 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LudoFashion</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Inclui o arquivo de estilo CSS externo -->
 </head>
 
 <body>
     <header>
-        <a href="">LudoFashion</a>
+        <a href="">LudoFashion</a> <!-- Logo ou título do site -->
         <form action="" id="form-buscar">
-            <input type="search" name="buscar" id="buscar" placeholder="buscar...">
+            <input type="search" name="buscar" id="buscar" placeholder="buscar..."> <!-- Formulário de busca -->
             <button type="submit" id="btn-buscar" class="btn-transparent">
-                <img src="imgs/search_24dp.png" alt="buscar" class="img-search">
+                <img src="imgs/search_24dp.png" alt="buscar" class="img-search"> <!-- Ícone de busca -->
             </button>
         </form>
 
         <a href="" class="icon-link">
             <img src="imgs/person_24dp.png" alt="Cadastre-se" width="40px">
-            Cadastre-se
+            Cadastre-se <!-- Link para cadastro -->
         </a>
 
         <a href="" class="icon-link">
             <img src="imgs/help_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Dúvidas" width="50px">
-            Dúvidas
+            Dúvidas <!-- Link para dúvidas -->
         </a>
     </header>
 
     <nav>
-        <a href="">Catálogo</a>
-        <a href="">Sobre a loja</a>
+        <a href="">Catálogo</a> <!-- Link para o catálogo -->
+        <a href="">Sobre a loja</a> <!-- Link para informações sobre a loja -->
     </nav>
 
     <div id="imageminterativa">
-        <img src="/PAGINA-INSERIR/imgs/feliz.png" alt="admin" width="40px">
+        <img src="/imgs/feliz.png" alt="admin" width="50px">
         <p>Bem vindo de volta adm! <br> É ótimo velo novamente! fique a vontade para inserir novos produtos!</p>
-
-
+        <!-- Mensagem de boas-vindas para o administrador -->
     </div>
-
-
-
 
     <main>
         <section>
-            <h1>Inserir Produto</h1>
+            <h1>Inserir Produto</h1> <!-- Título da seção de inserção de produtos -->
             <form action="processar_produto.php" method="post" enctype="multipart/form-data">
+                <!-- Formulário para inserção de produto, com método POST e enctype para upload de arquivos -->
                 <div class="campo">
                     <label for="nome">Nome do Produto:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome" required> <!-- Campo para inserir o nome do produto -->
                 </div>
 
                 <div class="campo">
                     <label for="descricao">Descrição:</label>
                     <textarea name="descricao" id="descricao" rows="4" required></textarea>
+                    <!-- Campo para inserir a descrição do produto -->
                 </div>
 
                 <div class="campo">
                     <label for="imagem">Imagem do Produto:</label>
                     <input type="file" id="imagem" name="imagem" accept="image/*" required>
+                    <!-- Campo para fazer upload da imagem do produto -->
                 </div>
 
                 <div class="campo">
-                    <button type="submit">Inserir Produto</button>
+                    <button type="submit">Inserir Produto</button> <!-- Botão para enviar o formulário -->
                 </div>
             </form>
         </section>
     </main>
 
     <footer>
-        <!--Rodapé do Site-->
+        <!-- Rodapé do Site -->
     </footer>
+
 </body>
 
 </html>

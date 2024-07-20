@@ -1,206 +1,191 @@
+/* Definição das variáveis CSS para cores principais */
 :root {
-    --cor-primaria: #F464C3;
-    --cor-secudaria: #3D1C31;
-    --cor-tres: #FDACE0;
-    --branco: white;
-    --preto: black;
-
+    --cor-primaria: #F464C3; /* Cor primária do tema */
+    --cor-secudaria: #3D1C31; /* Cor secundária do tema */
+    --cor-tres: #FDACE0; /* Cor terciária do tema */
+    --branco: white; /* Cor branca */
+    --preto: black; /* Cor preta */
 }
 
-
+/* Reset de estilos para todos os elementos */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
+/* Estilos gerais do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Altura da linha */
+    background-color: #f8f8f8; /* Cor de fundo */
 }
 
-
-
+/* Estilos do cabeçalho */
 header {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-primaria); /* Cor de fundo do cabeçalho */
     display: flex;
     padding: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--branco);
+    justify-content: space-between; /* Alinha itens ao redor */
+    align-items: center; /* Centraliza verticalmente */
+    color: var(--branco); /* Cor do texto */
 }
 
+/* Estilos dos links no cabeçalho */
 header a {
-    text-decoration: none;
-    color: var(--branco);
-    font-size: 1.2rem;
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: var(--branco); /* Cor do texto */
+    font-size: 1.2rem; /* Tamanho da fonte */
 }
 
+/* Estilos dos links de navegação no rodapé */
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
 
+/* Estilos da seção principal */
 main {
     padding: 2rem;
 }
 
-
+/* Estilos do formulário de inserção de produto */
 #formulario {
-    background-color: var(--branco);
+    background-color: var(--branco); /* Cor de fundo do formulário */
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilos do título do formulário */
 #formulario h1 {
-    margin-bottom: 1rem;
-    color: var(--cor-primaria);
-
-
-
+    margin-bottom: 1rem; /* Margem inferior */
+    color: var(--cor-primaria); /* Cor do título */
 }
 
+/* Estilos dos campos no formulário */
 .campo {
-    margin-bottom: 1rem;
-    color: #e347a7;
-    width: 50%;
-
-
+    margin-bottom: 1rem; /* Margem inferior */
 }
 
+/* Estilos para labels nos campos do formulário */
 label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.5rem;
+    font-weight: bold; /* Negrito */
+    display: block; /* Bloco (um abaixo do outro) */
+    margin-bottom: 0.5rem; /* Margem inferior */
 }
 
+/* Estilos para inputs de texto, número e textarea */
 input[type="text"],
 input[type="number"],
 textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+    width: 100%; /* Largura total */
+    padding: 0.5rem; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Borda arredondada */
+    font-size: 1rem; /* Tamanho da fonte */
 }
 
+/* Estilos específicos para textarea */
 textarea {
-    resize: vertical;
+    resize: vertical; /* Redimensionamento vertical */
 }
 
+/* Estilos para botões no formulário */
 button {
-    background-color: var(--cor-primaria);
-    color: var(--branco);
-    border: none;
-    padding: 0.75rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-
+    background-color: var(--cor-primaria); /* Cor de fundo do botão */
+    color: var(--branco); /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    padding: 0.75rem 1rem; /* Espaçamento interno */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar */
 }
 
+/* Estilos ao passar o mouse sobre o botão */
 button:hover {
-    background-color: #e347a7;
+    background-color: #e347a7; /* Cor de fundo ao passar o mouse */
 }
 
+/* Estilos do rodapé */
 footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--cor-primaria);
-    color: var(--branco);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 1px;
-    background-color: #F464C3;
-
+    text-align: center; /* Centraliza texto */
+    padding: 2rem; /* Espaçamento interno */
+    background-color: var(--cor-primaria); /* Cor de fundo */
+    color: var(--branco); /* Cor do texto */
+    position: fixed; /* Posicionamento fixo */
+    bottom: 0; /* Na parte inferior */
+    left: 0; /* À esquerda */
+    width: 100%; /* Largura total */
 }
 
-
+/* Estilos para o formulário de busca no cabeçalho */
 #form-buscar {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    flex-grow: 1; /* Cresce para ocupar espaço restante */
+    display: flex; /* Exibe como flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    position: relative; /* Posicionamento relativo */
 }
 
+/* Estilos para o campo de busca */
 #buscar {
-
-    flex-grow: 1;
-    padding: 0.4rem;
-    border-radius: 5px;
-    border: none;
-    outline: none;
+    flex-grow: 1; /* Cresce para ocupar espaço restante */
+    padding: 0.4rem; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    border: none; /* Sem borda */
+    outline: none; /* Sem contorno ao foco */
 }
 
+/* Estilos para os links de ícone no cabeçalho */
 .icon-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0.5rem;
+    display: flex; /* Exibe como flexível */
+    flex-direction: column; /* Direção de coluna */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 0.5rem; /* Margem externa */
 }
 
+/* Estilos para o botão de busca no cabeçalho */
 #btn-buscar {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-
-
-
+    background-color: transparent; /* Cor de fundo transparente */
+    border: none; /* Sem borda */
+    position: absolute; /* Posicionamento absoluto */
+    right: 10px; /* À direita */
+    top: 50%; /* Ao centro verticalmente */
+    transform: translateY(-50%); /* Ajusta para centralizar */
+    cursor: pointer; /* Cursor ao passar */
 }
 
+/* Estilos para a navegação principal */
 nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    background-color: var(--cor-tres);
-    padding: 0.5rem;
-
+    display: grid; /* Exibe como grid */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas iguais */
+    text-align: center; /* Centraliza texto */
+    background-color: var(--cor-tres); /* Cor de fundo */
+    padding: 0.5rem; /* Espaçamento interno */
 }
 
+/* Estilos para o primeiro link da navegação */
 nav a:first-child {
-    border-right: 1px solid var(--preto);
+    border-right: 1px solid var(--preto); /* Linha divisória à direita */
 }
 
-
-
+/* Estilos para a imagem de busca no botão */
 .img-search {
-    width: 25px;
-    object-fit: contain;
-
-
-
+    width: 25px; /* Largura */
+    object-fit: contain; /* Ajuste de imagem */
 }
 
+/* Estilos para botões transparentes */
 .btn-transparent {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    position: relative;
+    background-color: transparent; /* Cor de fundo transparente */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor ao passar */
+    padding: 0; /* Sem preenchimento */
+    position: relative; /* Posicionamento relativo */
 }
 
+/* Estilos para a seção de boas-vindas ao administrador */
 #imageminterativa {
- text-align: center;
- font-size:larger;
- font-family: Arial, Helvetica, sans-serif;
- 
+    text-align: center; /* Centraliza texto */
+    font-size: larger; /* Tamanho da fonte */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte */
 }
-
-
-
-
-
-
-
-
