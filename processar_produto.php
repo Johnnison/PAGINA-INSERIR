@@ -3,7 +3,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Configurações para o upload da imagem
-    $diretorioUpload = "uploads/"; // Diretório onde as imagens serão armazenadas
+    $diretorioUpload = "uploads.php"; // Diretório onde as imagens serão armazenadas
     $nomeArquivo = $_FILES["imagem"]["name"]; // Nome original do arquivo
     $caminhoArquivo = $diretorioUpload . basename($nomeArquivo); // Caminho completo do arquivo
 
@@ -26,4 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<h2>Erro ao realizar o upload da imagem.</h2>";
     }
 }
+
+
 ?>
+
+
+

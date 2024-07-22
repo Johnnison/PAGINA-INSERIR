@@ -78,7 +78,7 @@ label {
 input[type="text"],
 input[type="number"],
 textarea {
-    width: 100%; /* Largura total */
+    width: 50%; /* Largura total */
     padding: 0.5rem; /* Espaçamento interno */
     border: 1px solid #ccc; /* Borda cinza */
     border-radius: 4px; /* Borda arredondada */
