@@ -1,17 +1,16 @@
 {
-    "produtos": [
-      {
-        "id": 1,
-        "nome": "Camiseta Estampada",
-        "descricao": "Camiseta de algodão com estampa moderna",
-        "imagem": "caminho/para/imagem1.jpg"
-      },
-      {
-        "id": 2,
-        "nome": "Calça Jeans",
-        "descricao": "Calça jeans de corte reto",
-        "imagem": "caminho/para/imagem2.jpg"
-      }
-    ]
-  }
-  
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camiseta Estampada",
+      "descricao": "Camiseta de algodão com estampa moderna",
+      "imagem": "caminho/para/imagem1.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Calça Jeans",
+      "descricao": "Calça jeans de corte reto",
+      "imagem": "caminho/para/imagem2.jpg"
+    }
+  ]
+}
